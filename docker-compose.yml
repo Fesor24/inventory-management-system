@@ -1,0 +1,18 @@
+services:
+    postgres:
+        image: postgres
+        container_name: inventory_db
+        environment:
+            POSTGRES_PASSWORD: inventory
+        ports:
+            - 7222:5432
+        volumes:
+            - inventory-data:/var/lib/postgresql/data
+    adminer:
+        image: adminer
+        container_name: inventory_db_client
+        ports: 
+            - 8080:8080
+            
+volumes:
+    inventory-data:
