@@ -1,2 +1,1 @@
-### Inventory Management System
-Job Assessment
+### Inventory Management System (Assessment)
